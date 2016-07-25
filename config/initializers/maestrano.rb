@@ -10,7 +10,7 @@
     # More details on http://api-sandbox.maestrano.io
     #
     # config.environment = Settings[tenant][:environment]
-    config.environment = 'test'
+    config.environment = 'local'
 
     # ==> Application host
     # This is your application host (e.g: my-app.com) which is ultimately
