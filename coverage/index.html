@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-24T14:44:25+01:00">2016-07-24T14:44:25+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-25T10:52:47+01:00">2016-07-25T10:52:47+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -53,7 +53,7 @@
       <tr>
         <td class="strong"><a href="#e517d26f2a6dd8120c1469631e1c1fc8545c4842" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>8</td>
+        <td>7</td>
         <td>4</td>
         <td>4</td>
         <td>0</td>
@@ -193,7 +193,7 @@
       <tr>
         <td class="strong"><a href="#8a63024ea53d88ada23b12bda2b44e3fa8bcf1b0" class="src_link" title="config/initializers/maestrano.rb">config/initializers/maestrano.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>168</td>
+        <td>169</td>
         <td>17</td>
         <td>17</td>
         <td>0</td>
@@ -331,28 +331,22 @@
         <li class="never" data-hits="" data-linenumber="4">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # Prevent CSRF attacks by raising an exception.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby">  # Prevent CSRF attacks by raising an exception.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
           <code class="ruby">  # For APIs, you may want to use :null_session instead.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  protect_from_forgery with: :exception</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">end</code>
@@ -661,7 +655,7 @@
         <li class="covered" data-hits="1" data-linenumber="48">
           <span class="hits">1</span>
           
-          <code class="ruby">    redirect_to &#39;https://path/to/external/app&#39;</code>
+          <code class="ruby">    redirect_to &#39;https://app.futuresimple.com/sales&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
@@ -1816,943 +1810,949 @@
           <code class="ruby">    #</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="12">
           
-          <code class="ruby">    config.environment = Settings[tenant][:environment]</code>
+          
+          <code class="ruby">    # config.environment = Settings[tenant][:environment]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    config.environment = &#39;test&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">    # ==&gt; Application host</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">    # This is your application host (e.g: my-app.com) which is ultimately</code>
+          <code class="ruby">    # ==&gt; Application host</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">    # used to redirect users to the right SAML url during SSO handshake.</code>
+          <code class="ruby">    # This is your application host (e.g: my-app.com) which is ultimately</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
+          <code class="ruby">    # used to redirect users to the right SAML url during SSO handshake.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
           <code class="ruby">    #</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="18">
+        <li class="covered" data-hits="2" data-linenumber="19">
           <span class="hits">2</span>
           
           <code class="ruby">    config.app.host = Settings.app_host</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby">    # ==&gt; App ID &amp; API key</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">    # Your application App ID and API key which you can retrieve on http://maestrano.com</code>
+          <code class="ruby">    # ==&gt; App ID &amp; API key</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby">    # via your cloud partner dashboard.</code>
+          <code class="ruby">    # Your application App ID and API key which you can retrieve on http://maestrano.com</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby">    # For testing you can retrieve/generate an api.id and api.key from the API Sandbox directly</code>
+          <code class="ruby">    # via your cloud partner dashboard.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">    # on http://api-sandbox.maestrano.io</code>
+          <code class="ruby">    # For testing you can retrieve/generate an api.id and api.key from the API Sandbox directly</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # on http://api-sandbox.maestrano.io</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="26">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="26">
           
-          <code class="ruby">    config.api.host = Settings[tenant][:api_host]</code>
+          
+          <code class="ruby">    #</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="27">
           <span class="hits">2</span>
           
-          <code class="ruby">    config.connec.host = Settings[tenant][:connec_host]</code>
+          <code class="ruby">    config.api.host = Settings[tenant][:api_host]</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="28">
           <span class="hits">2</span>
           
-          <code class="ruby">    config.api.id = ENV[Settings[tenant][:api_id]]</code>
+          <code class="ruby">    config.connec.host = Settings[tenant][:connec_host]</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="29">
           <span class="hits">2</span>
           
+          <code class="ruby">    config.api.id = ENV[Settings[tenant][:api_id]]</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="30">
+          <span class="hits">2</span>
+          
           <code class="ruby">    config.api.key = ENV[Settings[tenant][:api_key]]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="31">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    config.sso.x509_certificate = Settings[tenant][:x509_certificate]</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="32">
           <span class="hits">2</span>
           
-          <code class="ruby">    config.sso.x509_fingerprint = Settings[tenant][:x509_fingerprint]</code>
+          <code class="ruby">    config.sso.x509_certificate = Settings[tenant][:x509_certificate]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="covered" data-hits="2" data-linenumber="33">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">    # ==&gt; Single Sign-On activation</code>
+          <code class="ruby">    config.sso.x509_fingerprint = Settings[tenant][:x509_fingerprint]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
           
           
-          <code class="ruby">    # Enable/Disable single sign-on. When troubleshooting authentication issues</code>
+          <code class="ruby">    # ==&gt; Single Sign-On activation</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">    # you might want to disable SSO temporarily</code>
+          <code class="ruby">    # Enable/Disable single sign-on. When troubleshooting authentication issues</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # you might want to disable SSO temporarily</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">    # config.sso.enabled = true</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # config.sso.enabled = true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">    # ==&gt; Single Sign-On Identity Manager</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">    # By default we consider that the domain managing user identification</code>
+          <code class="ruby">    # ==&gt; Single Sign-On Identity Manager</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">    # is the same as your application host (see above config.app.host parameter)</code>
+          <code class="ruby">    # By default we consider that the domain managing user identification</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">    # If you have a dedicated domain managing user identification and therefore</code>
+          <code class="ruby">    # is the same as your application host (see above config.app.host parameter)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">    # responsible for the single sign-on handshake (e.g: https://idp.my-app.com)</code>
+          <code class="ruby">    # If you have a dedicated domain managing user identification and therefore</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">    # then you can specify it below</code>
+          <code class="ruby">    # responsible for the single sign-on handshake (e.g: https://idp.my-app.com)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # then you can specify it below</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">    # config.sso.idm = (config.environment == &#39;production&#39; ? &#39;https://idp.my-app.com&#39; : &#39;http://localhost:3000&#39;)</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # config.sso.idm = (config.environment == &#39;production&#39; ? &#39;https://idp.my-app.com&#39; : &#39;http://localhost:3000&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby">    # ==&gt; SSO Initialization endpoint</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">    # This is your application path to the SAML endpoint that allows users to</code>
+          <code class="ruby">    # ==&gt; SSO Initialization endpoint</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">    # initialize SSO authentication. Upon reaching this endpoint users your</code>
+          <code class="ruby">    # This is your application path to the SAML endpoint that allows users to</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">    # application will automatically create a SAML request and redirect the user</code>
+          <code class="ruby">    # initialize SSO authentication. Upon reaching this endpoint users your</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">    # to Maestrano. Maestrano will then authenticate and authorize the user. Upon</code>
+          <code class="ruby">    # application will automatically create a SAML request and redirect the user</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">    # authorization the user gets redirected to your application consumer endpoint</code>
+          <code class="ruby">    # to Maestrano. Maestrano will then authenticate and authorize the user. Upon</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby">    # (see below) for initial setup and/or login.</code>
+          <code class="ruby">    # authorization the user gets redirected to your application consumer endpoint</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # (see below) for initial setup and/or login.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby">    # The controller for this path is automatically</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">    # generated when you run &#39;rake maestrano:install&#39; and is available at</code>
+          <code class="ruby">    # The controller for this path is automatically</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">    # &lt;rails_root&gt;/app/controllers/maestrano/auth/saml.rb</code>
+          <code class="ruby">    # generated when you run &#39;rake maestrano:install&#39; and is available at</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
           
           
+          <code class="ruby">    # &lt;rails_root&gt;/app/controllers/maestrano/auth/saml.rb</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
           <code class="ruby">    #</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="60">
+        <li class="covered" data-hits="2" data-linenumber="61">
           <span class="hits">2</span>
           
           <code class="ruby">    config.sso.init_path = Settings[tenant][:sso_init_path]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby">    # ==&gt; SSO Consumer endpoint</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
           
           
-          <code class="ruby">    # This is your application path to the SAML endpoint that allows users to</code>
+          <code class="ruby">    # ==&gt; SSO Consumer endpoint</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="64">
           
           
-          <code class="ruby">    # finalize SSO authentication. During the &#39;consume&#39; action your application</code>
+          <code class="ruby">    # This is your application path to the SAML endpoint that allows users to</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby">    # sets users (and associated group) up and/or log them in.</code>
+          <code class="ruby">    # finalize SSO authentication. During the &#39;consume&#39; action your application</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # sets users (and associated group) up and/or log them in.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby">    # The controller for this path is automatically</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
           
           
-          <code class="ruby">    # generated when you run &#39;rake maestrano:install&#39; and is available at</code>
+          <code class="ruby">    # The controller for this path is automatically</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
           
           
-          <code class="ruby">    # &lt;rails_root&gt;/app/controllers/maestrano/auth/saml.rb</code>
+          <code class="ruby">    # generated when you run &#39;rake maestrano:install&#39; and is available at</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="70">
           
           
+          <code class="ruby">    # &lt;rails_root&gt;/app/controllers/maestrano/auth/saml.rb</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
           <code class="ruby">    #</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="71">
+        <li class="covered" data-hits="2" data-linenumber="72">
           <span class="hits">2</span>
           
           <code class="ruby">    config.sso.consume_path = Settings[tenant][:sso_consume_path]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="72">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="73">
           
           
-          <code class="ruby">    # ==&gt; Single Logout activation</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="74">
           
           
-          <code class="ruby">    # Enable/Disable single logout. When troubleshooting authentication issues</code>
+          <code class="ruby">    # ==&gt; Single Logout activation</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="75">
           
           
-          <code class="ruby">    # you might want to disable SLO temporarily.</code>
+          <code class="ruby">    # Enable/Disable single logout. When troubleshooting authentication issues</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="76">
           
           
-          <code class="ruby">    # If set to false then Maestrano::SSO::Session#valid? - which should be</code>
+          <code class="ruby">    # you might want to disable SLO temporarily.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="77">
           
           
-          <code class="ruby">    # used in a controller before filter to check user session - always return true</code>
+          <code class="ruby">    # If set to false then Maestrano::SSO::Session#valid? - which should be</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="78">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # used in a controller before filter to check user session - always return true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="79">
           
           
-          <code class="ruby">    # config.sso.slo_enabled = true</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # config.sso.slo_enabled = true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
           
           
-          <code class="ruby">    # ==&gt; SSO User creation mode</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">    # !IMPORTANT</code>
+          <code class="ruby">    # ==&gt; SSO User creation mode</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="83">
           
           
-          <code class="ruby">    # On Maestrano users can take several &quot;instances&quot; of your service. You can consider</code>
+          <code class="ruby">    # !IMPORTANT</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="84">
           
           
-          <code class="ruby">    # each &quot;instance&quot; as 1) a billing entity and 2) a collaboration group (this is</code>
+          <code class="ruby">    # On Maestrano users can take several &quot;instances&quot; of your service. You can consider</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="85">
           
           
-          <code class="ruby">    # equivalent to a &#39;customer account&#39; in a commercial world). When users login to</code>
+          <code class="ruby">    # each &quot;instance&quot; as 1) a billing entity and 2) a collaboration group (this is</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="86">
           
           
-          <code class="ruby">    # your application via single sign-on they actually login via a specific group which</code>
+          <code class="ruby">    # equivalent to a &#39;customer account&#39; in a commercial world). When users login to</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="87">
           
           
-          <code class="ruby">    # is then supposed to determine which data they have access to inside your application.</code>
+          <code class="ruby">    # your application via single sign-on they actually login via a specific group which</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="88">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # is then supposed to determine which data they have access to inside your application.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="89">
           
           
-          <code class="ruby">    # E.g: John and Jack are part of group 1. They should see the same data when they login to</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="90">
           
           
-          <code class="ruby">    # your application (employee info, analytics, sales etc..). John is also part of group 2</code>
+          <code class="ruby">    # E.g: John and Jack are part of group 1. They should see the same data when they login to</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="91">
           
           
-          <code class="ruby">    # but not Jack. Therefore only John should be able to see the data belonging to group 2.</code>
+          <code class="ruby">    # your application (employee info, analytics, sales etc..). John is also part of group 2</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="92">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # but not Jack. Therefore only John should be able to see the data belonging to group 2.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
           
           
-          <code class="ruby">    # In most application this is done via collaboration/sharing/permission groups which is</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="94">
           
           
-          <code class="ruby">    # why a group is required to be created when a new user logs in via a new group (and</code>
+          <code class="ruby">    # In most application this is done via collaboration/sharing/permission groups which is</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="95">
           
           
-          <code class="ruby">    # also for billing purpose - you charge a group, not a user directly).</code>
+          <code class="ruby">    # why a group is required to be created when a new user logs in via a new group (and</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="96">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # also for billing purpose - you charge a group, not a user directly).</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="97">
           
           
-          <code class="ruby">    # == mode: &#39;real&#39;</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="98">
           
           
-          <code class="ruby">    # In an ideal world a user should be able to belong to several groups in your application.</code>
+          <code class="ruby">    # == mode: &#39;real&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="99">
           
           
-          <code class="ruby">    # In this case you would set the &#39;sso.creation_mode&#39; to &#39;real&#39; which means that the uid</code>
+          <code class="ruby">    # In an ideal world a user should be able to belong to several groups in your application.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="100">
           
           
-          <code class="ruby">    # and email we pass to you are the actual user email and maestrano universal id.</code>
+          <code class="ruby">    # In this case you would set the &#39;sso.creation_mode&#39; to &#39;real&#39; which means that the uid</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="101">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # and email we pass to you are the actual user email and maestrano universal id.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="102">
           
           
-          <code class="ruby">    # == mode: &#39;virtual&#39;</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="103">
           
           
-          <code class="ruby">    # Now let&#39;s say that due to technical constraints your application cannot authorize a user</code>
+          <code class="ruby">    # == mode: &#39;virtual&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="104">
           
           
-          <code class="ruby">    # to belong to several groups. Well next time John logs in via a different group there will</code>
+          <code class="ruby">    # Now let&#39;s say that due to technical constraints your application cannot authorize a user</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="105">
           
           
-          <code class="ruby">    # be a problem: the user already exists (based on uid or email) and cannot be assigned</code>
+          <code class="ruby">    # to belong to several groups. Well next time John logs in via a different group there will</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="106">
           
           
-          <code class="ruby">    # to a second group. To fix this you can set the &#39;sso.creation_mode&#39; to &#39;virtual&#39;. In this</code>
+          <code class="ruby">    # be a problem: the user already exists (based on uid or email) and cannot be assigned</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="107">
           
           
-          <code class="ruby">    # mode users get assigned a truly unique uid and email across groups. So next time John logs</code>
+          <code class="ruby">    # to a second group. To fix this you can set the &#39;sso.creation_mode&#39; to &#39;virtual&#39;. In this</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="108">
           
           
-          <code class="ruby">    # in a whole new user account can be created for him without any validation problem. In this</code>
+          <code class="ruby">    # mode users get assigned a truly unique uid and email across groups. So next time John logs</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="109">
           
           
-          <code class="ruby">    # mode the email we assign to him looks like &quot;usr-sdf54.cld-45aa2@mail.maestrano.com&quot;. But don&#39;t</code>
+          <code class="ruby">    # in a whole new user account can be created for him without any validation problem. In this</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="110">
           
           
-          <code class="ruby">    # worry we take care of forwarding any email you would send to this address</code>
+          <code class="ruby">    # mode the email we assign to him looks like &quot;usr-sdf54.cld-45aa2@mail.maestrano.com&quot;. But don&#39;t</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="111">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # worry we take care of forwarding any email you would send to this address</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="112">
           
           
-          <code class="ruby">    # config.sso.creation_mode = &#39;real&#39; # or &#39;virtual&#39;</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="113">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # config.sso.creation_mode = &#39;real&#39; # or &#39;virtual&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="114">
           
           
-          <code class="ruby">    # ==&gt; Account Webhooks</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="115">
           
           
-          <code class="ruby">    # Single sign on has been setup into your app and Maestrano users are now able</code>
+          <code class="ruby">    # ==&gt; Account Webhooks</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="116">
           
           
-          <code class="ruby">    # to use your service. Great! Wait what happens when a business (group) decides to</code>
+          <code class="ruby">    # Single sign on has been setup into your app and Maestrano users are now able</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="117">
           
           
-          <code class="ruby">    # stop using your service? Also what happens when a user gets removed from a business?</code>
+          <code class="ruby">    # to use your service. Great! Wait what happens when a business (group) decides to</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="118">
           
           
-          <code class="ruby">    # Well the endpoints below are for Maestrano to be able to notify you of such</code>
+          <code class="ruby">    # stop using your service? Also what happens when a user gets removed from a business?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="119">
           
           
-          <code class="ruby">    # events.</code>
+          <code class="ruby">    # Well the endpoints below are for Maestrano to be able to notify you of such</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="120">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # events.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="121">
           
           
-          <code class="ruby">    # Even if the routes look restful we issue only issue DELETE requests for the moment</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="122">
           
           
-          <code class="ruby">    # to notify you of any service cancellation (group deletion) or any user being</code>
+          <code class="ruby">    # Even if the routes look restful we issue only issue DELETE requests for the moment</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="123">
           
           
-          <code class="ruby">    # removed from a group.</code>
+          <code class="ruby">    # to notify you of any service cancellation (group deletion) or any user being</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="124">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # removed from a group.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="125">
           
           
-          <code class="ruby">    # The controllers for these hooks path are automatically generated when</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="126">
           
           
-          <code class="ruby">    # you run &#39;rake maestrano:install&#39; and is available under</code>
+          <code class="ruby">    # The controllers for these hooks path are automatically generated when</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="127">
           
           
-          <code class="ruby">    # &lt;rails_root&gt;/app/controllers/maestrano/account/</code>
+          <code class="ruby">    # you run &#39;rake maestrano:install&#39; and is available under</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="128">
           
           
-          <code class="ruby">    #</code>
+          <code class="ruby">    # &lt;rails_root&gt;/app/controllers/maestrano/account/</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="129">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="129">
           
-          <code class="ruby">    config.webhook.account.groups_path = Settings[tenant][:webhook][:account][:groups_path]</code>
+          
+          <code class="ruby">    #</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="130">
           <span class="hits">2</span>
           
+          <code class="ruby">    config.webhook.account.groups_path = Settings[tenant][:webhook][:account][:groups_path]</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="131">
+          <span class="hits">2</span>
+          
           <code class="ruby">    config.webhook.account.group_users_path = Settings[tenant][:webhook][:account][:group_users_path]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="131">
+        <li class="never" data-hits="" data-linenumber="132">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="132">
+        <li class="covered" data-hits="2" data-linenumber="133">
           <span class="hits">2</span>
           
           <code class="ruby">    config.webhook.connec.notifications_path = Settings[tenant][:webhook][:connec][:notifications_path]</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="133">
+        <li class="covered" data-hits="2" data-linenumber="134">
           <span class="hits">2</span>
           
           <code class="ruby">    config.webhook.connec.external_ids = true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="134">
+        <li class="never" data-hits="" data-linenumber="135">
           
           
           <code class="ruby">    #</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="135">
+        <li class="never" data-hits="" data-linenumber="136">
           
           
           <code class="ruby">    # == Subscriptions</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="136">
+        <li class="never" data-hits="" data-linenumber="137">
           
           
           <code class="ruby">    # This is the list of entities (organizations,people,invoices etc.) for which you want to be</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="137">
+        <li class="never" data-hits="" data-linenumber="138">
           
           
           <code class="ruby">    # notified upon creation/update in Connec!™</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="138">
+        <li class="covered" data-hits="2" data-linenumber="139">
           <span class="hits">2</span>
           
           <code class="ruby">    config.webhook.connec.subscriptions = {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="139">
+        <li class="never" data-hits="" data-linenumber="140">
           
           
           <code class="ruby">      accounts: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="140">
+        <li class="never" data-hits="" data-linenumber="141">
           
           
           <code class="ruby">      company: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="141">
+        <li class="never" data-hits="" data-linenumber="142">
           
           
           <code class="ruby">      employees: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="142">
+        <li class="never" data-hits="" data-linenumber="143">
           
           
           <code class="ruby">      events: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="143">
+        <li class="never" data-hits="" data-linenumber="144">
           
           
           <code class="ruby">      event_orders: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="144">
+        <li class="never" data-hits="" data-linenumber="145">
           
           
           <code class="ruby">      invoices: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="145">
+        <li class="never" data-hits="" data-linenumber="146">
           
           
           <code class="ruby">      items: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="146">
+        <li class="never" data-hits="" data-linenumber="147">
           
           
           <code class="ruby">      journals: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="147">
+        <li class="never" data-hits="" data-linenumber="148">
           
           
           <code class="ruby">      opportunities: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="148">
+        <li class="never" data-hits="" data-linenumber="149">
           
           
           <code class="ruby">      organizations: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="149">
+        <li class="never" data-hits="" data-linenumber="150">
           
           
           <code class="ruby">      payments: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="150">
+        <li class="never" data-hits="" data-linenumber="151">
           
           
           <code class="ruby">      pay_items: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="151">
+        <li class="never" data-hits="" data-linenumber="152">
           
           
           <code class="ruby">      pay_schedules: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="152">
+        <li class="never" data-hits="" data-linenumber="153">
           
           
           <code class="ruby">      pay_stubs: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="153">
+        <li class="never" data-hits="" data-linenumber="154">
           
           
           <code class="ruby">      pay_runs: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="154">
+        <li class="never" data-hits="" data-linenumber="155">
           
           
           <code class="ruby">      people: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="155">
+        <li class="never" data-hits="" data-linenumber="156">
           
           
           <code class="ruby">      projects: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="156">
+        <li class="never" data-hits="" data-linenumber="157">
           
           
           <code class="ruby">      purchase_orders: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="157">
+        <li class="never" data-hits="" data-linenumber="158">
           
           
           <code class="ruby">      quotes: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="158">
+        <li class="never" data-hits="" data-linenumber="159">
           
           
           <code class="ruby">      sales_orders: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="159">
+        <li class="never" data-hits="" data-linenumber="160">
           
           
           <code class="ruby">      tax_codes: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="160">
+        <li class="never" data-hits="" data-linenumber="161">
           
           
           <code class="ruby">      tax_rates: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="161">
+        <li class="never" data-hits="" data-linenumber="162">
           
           
           <code class="ruby">      time_activities: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="162">
+        <li class="never" data-hits="" data-linenumber="163">
           
           
           <code class="ruby">      time_sheets: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="163">
+        <li class="never" data-hits="" data-linenumber="164">
           
           
           <code class="ruby">      venues: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="164">
+        <li class="never" data-hits="" data-linenumber="165">
           
           
           <code class="ruby">      warehouses: false,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="165">
+        <li class="never" data-hits="" data-linenumber="166">
           
           
           <code class="ruby">      work_locations: false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="166">
+        <li class="never" data-hits="" data-linenumber="167">
           
           
           <code class="ruby">    }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="167">
+        <li class="never" data-hits="" data-linenumber="168">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="168">
+        <li class="never" data-hits="" data-linenumber="169">
           
           
           <code class="ruby">end</code>

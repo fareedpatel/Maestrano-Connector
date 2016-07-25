@@ -108,7 +108,8 @@ describe HomeController, :type => :controller do
     subject { get :redirect_to_external }
 
     context 'otherwise' do
-      it {expect(subject).to redirect_to('somewhere')}
+      it {expect(subject).to redirect_to('https://app.futuresimple.com/sales')}
+
     end
   end
 end
