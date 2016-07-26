@@ -7,6 +7,8 @@ gem 'puma'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
 gem 'uglifier', '>= 1.3.0'
 gem 'maestrano-connector-rails'
+gem 'autoprefixer-rails'
+gem 'sidekiq'
 gem 'basecrm'
 gem 'oauth2'
 group :production, :uat do
