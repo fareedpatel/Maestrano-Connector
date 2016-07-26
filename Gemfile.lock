@@ -290,7 +290,7 @@ DEPENDENCIES
   rails_12factor
   rspec-rails
   shoulda-matchers
-  sidekiq (= 4.1.4)
+  sidekiq
   simplecov
   sqlite3
   timecop
