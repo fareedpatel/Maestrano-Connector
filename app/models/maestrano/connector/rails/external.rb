@@ -2,8 +2,7 @@ class Maestrano::Connector::Rails::External
   include Maestrano::Connector::Rails::Concerns::External
 
   def self.external_name
-    # TODO
-    # Returns the name of the external app
+    'baseCRM'
   end
 
   def self.get_client(organization)
@@ -23,7 +22,7 @@ class Maestrano::Connector::Rails::External
   def self.entities_list
     # TODO
     # The names in this list should match the names of your entities class
-    # e.g %w(person, tasks_list)
+    %w(contacts, contacts, products)
     #  will synchronized Entities::Person and Entities::TasksList
     []
   end
