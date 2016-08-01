@@ -2,26 +2,27 @@ require 'spec_helper'
 
 describe OauthController, :type => :controller do
   describe 'request_omniauth' do
-    let(:organization) { create(:organization, uid: 'uid-123') }
-    before {
-      allow_any_instance_of(Maestrano::Connector::Rails::SessionHelper).to receive(:current_organization).and_return(organization)
-    }
-    subject { get :request_omniauth, provider: 'basecrm' }
-
-    context 'when not admin' do
+      let(:organization) { create(:organization, uid: 'uid-123') }
       before {
-        allow_any_instance_of(ApplicationHelper).to receive(:is_admin).and_return(false)
+        allow_any_instance_of(Maestrano::Connector::Rails::SessionHelper).to receive(:current_organization).and_return(user)
       }
+      subject { get :request_omniauth, provider: 'basecrm' }
 
-      it {expect(subject).to redirect_to(root_url)}
-    end
+      context 'when not admin' do
+        before {
+          allow_any_instance_of(Maestrano::Connector::Rails::SessionHelper).to receive(:is_admin).and_return(false)
+        }
 
-    context 'when admin' do
+        it {expect(subject).to redirect_to(root_url)}
+      end
+
+      context 'when admin' do
       before {
-        allow_any_instance_of(ApplicationHelper).to receive(:is_admin).and_return(true)
+        allow_any_instance_of(Maestrano::Connector::Rails::SessionHelper).to receive(:is_admin).and_return(true)
       }
-
-      it {expect(subject).to redirect_to('http://test.host/auth/basecrm?state=uid-123')}
+      it 'redirects to base in order to authorize endpoint' do
+        expect(subject.redirect_url).to match(/https:\/\/api.getbase.com\/oauth2\/authorize.+?state=uid-123$/)
+      end
     end
   end
 
@@ -66,14 +67,13 @@ describe OauthController, :type => :controller do
       context 'when admin' do
         before {
           allow_any_instance_of(Maestrano::Connector::Rails::SessionHelper).to receive(:is_admin?).and_return(true)
-          allow_any_instance_of(Maestrano::Connector::Rails::Organization).to receive(:from_omniauth)
-          allow(Maestrano::Connector::Rails::External).to receive(:fetch_company).and_return({'Name' => 'lala', 'Id' => 'idd'})
+          allow_any_instance_of(Maestrano::Connector::Rails::Organization).to receive(:belonging_to_omniauth)
+          allow(organizationManager).to receive(:update) {'test'}
         }
 
         it 'update the organization with data from oauth and api calls' do
-          expect_any_instance_of(Maestrano::Connector::Rails::Organization).to receive(:from_omniauth)
-          expect(Maestrano::Connector::Rails::External).to receive(:fetch_company)
-          subject
+          callback
+          expect(OrganizationManager.update).to eq "Test"
         end
       end
     end
@@ -91,7 +91,7 @@ describe OauthController, :type => :controller do
 
     context 'when organization is found' do
       let(:id) { organization.id }
-      let(:user) { Maestrano::Connector::Rails::User.new(email: 'lla@mail.com', tenant: 'default') }
+      let(:user) { Maestrano::Connector::Rails::User.new(email: 'lala@mail.com', tenant: 'default') }
       before {
         allow_any_instance_of(Maestrano::Connector::Rails::SessionHelper).to receive(:current_user).and_return(user)
       }
